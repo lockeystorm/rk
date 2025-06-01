@@ -8,7 +8,8 @@ option(BUILD_TESTS "Build tests" ON)
 
 set(LIB_SOURCE 
     source/resource.h source/maptile.h
-    source/maptileproxy.h source/map.h)
+    source/maptileproxy.h source/map.h
+    source/maptile.cpp source/maptileproxy.cpp source/map.cpp)
     
 add_library(map STATIC ${LIB_SOURCE})
 target_include_directories(map PUBLIC ../source)

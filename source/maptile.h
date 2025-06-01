@@ -3,21 +3,14 @@
 class MapTile
 {
 public:
-    MapTile(double centerX, double centerY, double width, double height)
-        : centerX_(centerX), centerY_(centerY), width_(width), height_(height)
-    {
-        // Load resource. (Heavy Work)
-    }
+    MapTile(double centerX, double centerY, double width, double height);
 
-    void Draw() const
-    {
-        std::cout << "* Draw MapTile from resouce. *" << std::endl;
-    }
+    void Draw() const;
 
-    double CenterX() const { return centerX_; }
-    double CenterY() const { return centerY_; }
-    double Width() const { return width_; }
-    double Height() const { return height_; }
+    double CenterX() const;
+    double CenterY() const;
+    double Width() const;
+    double Height() const;
 
 private:
     double centerX_, centerY_;

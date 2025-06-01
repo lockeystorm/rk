@@ -5,23 +5,14 @@
 class MapTileProxy
 {
 public:
-    MapTileProxy(double centerX, double centerY, double width, double height)
-        : centerX_(centerX), centerY_(centerY), width_(width), height_(height)
-    {}
+    MapTileProxy(double centerX, double centerY, double width, double height);
 
-    void Draw() const
-    {
-        if (realMapTile_ == nullptr)
-        {
-            realMapTile_ = std::make_unique<MapTile>(centerX_, centerY_, width_, height_);
-        }
-        realMapTile_->Draw();
-    }
+    void Draw() const;
 
-    double CenterX() const { return centerX_; }
-    double CenterY() const { return centerY_; }
-    double Width() const { return width_; }
-    double Height() const { return height_; }
+    double CenterX() const;
+    double CenterY() const;
+    double Width() const;
+    double Height() const;
 
 private:
     double centerX_, centerY_;
