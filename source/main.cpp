@@ -1,4 +1,4 @@
-#include "resouce.h"
+#include "resource.h"
 #include "maptile.h"
 #include "maptileproxy.h"
 #include "map.h"
