@@ -7,8 +7,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 option(BUILD_TESTS "Build tests" ON)
 
 set(LIB_SOURCE 
-    source/Resource.h source/MapTile.h
-    source/MapTileProxy.h source/Map.h)
+    source/resource.h source/mapTile.h
+    source/mapTileProxy.h source/map.h)
     
 add_library(map STATIC ${LIB_SOURCE})
 target_include_directories(map PUBLIC ../source)
