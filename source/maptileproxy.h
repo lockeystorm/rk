@@ -1,3 +1,6 @@
+#ifndef MAPTILEPROXY_H
+#define MAPTILEPROXY_H
+
 #include <memory>
 #include "maptile.h"
 
@@ -19,3 +22,5 @@ private:
     double width_, height_;
     mutable std::unique_ptr<MapTile> realMapTile_;
 };
+
+#endif

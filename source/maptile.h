@@ -1,3 +1,6 @@
+#ifndef MAPTILE_H
+#define MAPTILE_H
+
 #include "resource.h"
 
 class MapTile
@@ -17,3 +20,5 @@ private:
     double width_, height_;
     Resource resource_;
 };
+
+#endif

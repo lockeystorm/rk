@@ -1,3 +1,6 @@
+#ifndef MAP_H
+#define MAP_H
+
 #include <vector>
 #include <cassert>
 #include "maptileproxy.h"
@@ -12,3 +15,5 @@ public:
 private:
     std::vector<MapTileProxy> mapTileList_;
 };
+
+#endif
